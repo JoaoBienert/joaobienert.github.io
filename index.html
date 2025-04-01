@@ -1,41 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title><?= $pageTitle ?></title>
+  <title>Curadoria de melhores artigos que li</title>
   <meta name="description" content="Artigos que li, gostei e recomendo sobre fotografia, maternidade e finanças.">
   <link rel="stylesheet" href="style.css">
-  <style>
-    .link-menu {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 10px;
-    }
-    .link-menu a {
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-    }
-    .disclaimer {
-      font-size: 0.9em;
-      color: #666;
-      background: #f5f5f5;
-      padding: 10px;
-      margin-top: 30px;
-      border-left: 4px solid #ccc;
-    }
-  </style>
 </head>
 <body>
   <header>
-    <h1><span class="logo">🍕☕</span> <?= $pageTitle ?></h1>
-    <nav class="link-menu">
-      <a href="index.php">Início</a>
-      <?php foreach ($categories as $cat): ?>
-        <a href="<?= $cat['link'] ?>"><?= $cat['title'] ?></a>
-      <?php endforeach; ?>
+    <h1><span class="logo">🍕☕</span> Curadoria de melhores artigos que li</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="mundodasfotos.html">Fotografia</a></li>
+        <li><a href="sosmamae.html">Maternidade</a></li>
+        <li><a href="generalinvestidor.html">Finanças</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -48,19 +28,14 @@
     <section>
       <h2>🔗 Acesse por categoria:</h2>
       <ul>
-        <?php foreach ($categories as $cat): ?>
-          <li><a href="<?= $cat['link'] ?>"><?= $cat['title'] ?></a></li>
-        <?php endforeach; ?>
+        <li><a href="mundodasfotos.html">📸 Artigos sobre Fotografia</a></li>
+        <li><a href="sosmamae.html">🍼 Artigos sobre Maternidade</a></li>
+        <li><a href="generalinvestidor.html">💰 Artigos sobre Finanças Pessoais e Investimentos</a></li>
       </ul>
     </section>
-
-    <div class="disclaimer">
-      Esta é uma curadoria pessoal de artigos que li e recomendo. Os links aqui são públicos, não patrocinados, e não têm intenção comercial. Este projeto é apenas para compartilhar conhecimento com quem se interessa pelos mesmos assuntos.
-    </div>
   </main>
 
   <footer>
-    <p>Esta é uma curadoria pessoal de artigos que li e recomendo. Os links aqui são públicos, não patrocinados e sem intenção comercial.</p>
     <p>Feito por João Bienert com pizza, café e bons conteúdos 🍕☕</p>
   </footer>
 </body>
