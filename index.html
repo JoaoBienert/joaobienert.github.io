@@ -1,8 +1,16 @@
+<?php
+$pageTitle = "Curadoria de melhores artigos que li";
+$categories = [
+  ["title" => "📸 Artigos sobre Fotografia", "link" => "mundodasfotos.html"],
+  ["title" => "🍼 Artigos sobre Maternidade", "link" => "sosmamae.html"],
+  ["title" => "💰 Artigos sobre Finanças Pessoais e Investimentos", "link" => "generalinvestidor.html"]
+];
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Curadoria de melhores artigos que li</title>
+  <title><?= $pageTitle ?></title>
   <meta name="description" content="Artigos que li, gostei e recomendo sobre fotografia, maternidade e finanças.">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -29,12 +37,12 @@
 </head>
 <body>
   <header>
-    <h1><span class="logo">🍕☕</span> Curadoria de melhores artigos que li</h1>
+    <h1><span class="logo">🍕☕</span> <?= $pageTitle ?></h1>
     <nav class="link-menu">
-      <a href="index.html">Início</a>
-      <a href="mundodasfotos.html">Fotografia</a>
-      <a href="sosmamae.html">Maternidade</a>
-      <a href="generalinvestidor.html">Finanças</a>
+      <a href="index.php">Início</a>
+      <?php foreach ($categories as $cat): ?>
+        <a href="<?= $cat['link'] ?>"><?= $cat['title'] ?></a>
+      <?php endforeach; ?>
     </nav>
   </header>
 
@@ -47,9 +55,9 @@
     <section>
       <h2>🔗 Acesse por categoria:</h2>
       <ul>
-        <li><a href="mundodasfotos.html">📸 Artigos sobre Fotografia</a></li>
-        <li><a href="sosmamae.html">🍼 Artigos sobre Maternidade</a></li>
-        <li><a href="generalinvestidor.html">💰 Artigos sobre Finanças Pessoais e Investimentos</a></li>
+        <?php foreach ($categories as $cat): ?>
+          <li><a href="<?= $cat['link'] ?>"><?= $cat['title'] ?></a></li>
+        <?php endforeach; ?>
       </ul>
     </section>
 
@@ -59,8 +67,8 @@
   </main>
 
   <footer>
-  <p>Esta é uma curadoria pessoal de artigos que li e recomendo. Os links aqui são públicos, não patrocinados e sem intenção comercial.</p>
-  <p>Feito por João Bienert com pizza, café e bons conteúdos 🍕☕</p>
-</footer>
+    <p>Esta é uma curadoria pessoal de artigos que li e recomendo. Os links aqui são públicos, não patrocinados e sem intenção comercial.</p>
+    <p>Feito por João Bienert com pizza, café e bons conteúdos 🍕☕</p>
+  </footer>
 </body>
 </html>
