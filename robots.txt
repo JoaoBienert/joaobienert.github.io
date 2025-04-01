@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joaobienert.github.io/sitemap.xml
