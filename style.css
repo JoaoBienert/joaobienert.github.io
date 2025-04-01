@@ -1,50 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Curadoria de melhores artigos que li</title>
+  <meta name="description" content="Artigos que li, gostei e recomendo sobre fotografia, maternidade e finanças.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site">
+  <header class="site-header">
+    <h1 class="site-title">🍕☕ Curadoria de melhores artigos que li</h1>
+    <nav class="nav-menu">
+      <a class="nav-link" href="index.html">Início</a>
+      <a class="nav-link" href="mundodasfotos.html">📸 Artigos sobre Fotografia</a>
+      <a class="nav-link" href="sosmamae.html">🍼 Artigos sobre Maternidade</a>
+      <a class="nav-link" href="generalinvestidor.html">💰 Artigos sobre Finanças Pessoais e Investimentos</a>
+    </nav>
+  </header>
 
-body {
-  font-family: Arial, sans-serif;
-  background: #fdfdfd;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
+  <main class="main-content">
+    <article class="intro-article">
+      <h2 class="section-title">📝 Por que criei essa curadoria?</h2>
+      <p class="intro-text">Ao longo do tempo, fui lendo muitos artigos úteis e inspiradores em diferentes sites. Para facilitar meu acesso e também compartilhar com amigos e colegas, decidi organizar aqui uma curadoria com os que mais gostei. Não são apenas links: são leituras que realmente agregaram valor e que recomendo de coração.</p>
+    </article>
 
-header {
-  background: #f1f1f1;
-  padding: 20px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
+    <section class="category-section">
+      <h2 class="section-title">🔗 Acesse por categoria:</h2>
+      <ul class="category-list">
+        <li><a class="category-link" href="mundodasfotos.html">📸 Artigos sobre Fotografia</a></li>
+        <li><a class="category-link" href="sosmamae.html">🍼 Artigos sobre Maternidade</a></li>
+        <li><a class="category-link" href="generalinvestidor.html">💰 Artigos sobre Finanças Pessoais e Investimentos</a></li>
+      </ul>
+    </section>
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-}
+    <div class="disclaimer-box">
+      Esta é uma curadoria pessoal de artigos que li e recomendo. Os links aqui são públicos, não patrocinados, e não têm intenção comercial. Este projeto é apenas para compartilhar conhecimento com quem se interessa pelos mesmos assuntos.
+    </div>
+  </main>
 
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #0077cc;
-  margin: 0 10px;
-}
-
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-footer {
-  background: #f9f9f9;
-  text-align: center;
-  padding: 15px;
-  border-top: 1px solid #ddd;
-  margin-top: 30px;
-  font-size: 14px;
-}
+  <footer class="site-footer">
+    <p class="footer-note">Esta é uma curadoria pessoal de artigos que li e recomendo. Os links aqui são públicos, não patrocinados e sem intenção comercial.</p>
+    <p class="footer-credit">Feito por João Bienert com pizza, café e bons conteúdos 🍕☕</p>
+  </footer>
+</body>
+</html>
