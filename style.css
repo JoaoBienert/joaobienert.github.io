@@ -1,106 +1,70 @@
 
-body.site {
-  font-family: 'Georgia', serif;
-  background-color: #fcfcfc;
-  color: #333;
-  max-width: 800px;
-  margin: auto;
-  padding: 30px 20px;
-  line-height: 1.6;
-}
-
-.site-header {
-  text-align: center;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 20px;
-}
-
-.site-title {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.nav-link {
-  color: #007acc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
-}
-
-.main-content {
-  padding: 10px 0;
-}
-
-.intro-article {
-  margin-bottom: 30px;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.intro-text {
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.category-section {
+body.wiki-body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   background: #f9f9f9;
+  color: #333;
+  display: flex;
+  min-height: 100vh;
+}
+
+.wiki-sidebar {
+  background: #eaeaea;
+  width: 220px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.category-list {
-  list-style: none;
-  padding-left: 0;
+.wiki-logo {
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
-.category-list li {
-  margin-bottom: 10px;
+.wiki-site-title {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
-.category-link {
-  color: #4a90e2;
-  font-weight: bold;
+.wiki-menu a {
+  display: block;
+  color: #0645ad;
   text-decoration: none;
+  margin: 8px 0;
+  font-weight: bold;
 }
 
-.category-link:hover {
+.wiki-menu a:hover {
   text-decoration: underline;
 }
 
-.disclaimer-box {
+.wiki-main {
+  margin-left: 240px;
+  padding: 30px;
+  max-width: 800px;
+}
+
+.wiki-section {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
   margin-top: 30px;
-  padding: 15px;
-  background: #fff8e1;
-  border-left: 4px solid #ffc107;
-  color: #5a5a5a;
-  font-size: 0.95em;
+  border-radius: 4px;
 }
 
-.site-footer {
-  margin-top: 50px;
-  padding-top: 20px;
-  border-top: 1px solid #eaeaea;
+.wiki-section h2 {
+  margin-top: 0;
+}
+
+.wiki-footer {
+  margin-left: 240px;
+  padding: 20px 30px;
+  background: #ececec;
+  border-top: 1px solid #ccc;
   text-align: center;
-  color: #888;
   font-size: 0.9em;
-}
-
-.footer-note {
-  margin-bottom: 5px;
 }
